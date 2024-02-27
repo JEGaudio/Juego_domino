@@ -65,4 +65,5 @@ tbody.addEventListener('click', function (e) {
 
   cartas[cell.cellIndex][row.rowIndex].Seleccion = true;
   console.log(cartas.Seleccion);
+  console.log(cartas);
 });
