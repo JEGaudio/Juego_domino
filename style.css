@@ -1,5 +1,60 @@
+.grid-main{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
 
+.grid-child{
+    margin: auto 0;
+    vertical-align:middle;
+    text-align: center;
+}
+
+.centrado {
+    margin: auto;
+    text-align: center;
+}
 
 #posicion_fichas td {
     padding: 10px;
+}
+
+
+#mesa_juego{
+    margin: auto;
+    text-align: center;
+    vertical-align:middle;
+}
+
+#mesa_juego td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#mano_jugador_texto{
+    margin: auto;
+    font-size: 1.5em;
+    border: 1px solid black;
+}
+
+#mano_jugador{
+    margin: auto;
+    text-align: center;
+}
+
+#mano_jugador td {
+    padding: 10px;
+}
+
+td.selected {
+    background-color: green;
+}
+
+td.notselected {
+    background-color: white;
+}
+
+td.mano, td.juego {
+    background-color: white;
+    color: white;
 }

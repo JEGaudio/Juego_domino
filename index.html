@@ -16,27 +16,54 @@
 
     </header>
     <main>
-        <div>
+        <div class="centrado">
             <h1>Juego de domino, calculo de probabilidades</h1>
             <p class="mensaje_indicacion">Seleccionar las fichas que te tocaron</p>
         </div>
 
-        <div>
-            <section>
-                <table id="posicion_fichas">
-                    <tr><td>0/6</td><td>0/5</td><td>0/4</td><td>0/3</td><td>0/2</td><td>0/1</td><td>0/0</td></tr>
-                    <tr><td>1/6</td><td>1/5</td><td>1/4</td><td>1/3</td><td>1/2</td><td>1/1</td></tr>
-                    <tr><td>2/6</td><td>2/5</td><td>2/4</td><td>2/3</td><td>2/2</td></tr>
-                    <tr><td>3/6</td><td>3/5</td><td>3/4</td><td>3/3</td></tr>
-                    <tr><td>4/6</td><td>4/5</td><td>4/4</td></tr>
-                    <tr><td>5/6</td><td>5/5</td></tr>
-                    <tr><td>6/6</td></tr>
-                </table>
-            </section>
+        <div class="grid-main">
+            <div class="grid-child">
+                <section>
+                    <table id="posicion_fichas">
+                        <tr><td>0/6</td><td>0/5</td><td>0/4</td><td>0/3</td><td>0/2</td><td>0/1</td><td>0/0</td></tr>
+                        <tr><td>1/6</td><td>1/5</td><td>1/4</td><td>1/3</td><td>1/2</td><td>1/1</td></tr>
+                        <tr><td>2/6</td><td>2/5</td><td>2/4</td><td>2/3</td><td>2/2</td></tr>
+                        <tr><td>3/6</td><td>3/5</td><td>3/4</td><td>3/3</td></tr>
+                        <tr><td>4/6</td><td>4/5</td><td>4/4</td></tr>
+                        <tr><td>5/6</td><td>5/5</td></tr>
+                        <tr><td>6/6</td></tr>
+                    </table>
+                </section>
+            </div>
+
+            <div class="grid-child">
+                
+                    <table id="mesa_juego">
+                        <tr id="row_juego"></tr>
+                    </table>
+                
+            </div>
+
+            <div class="grid-child">
+                <section id="config">
+                    <h2>Configuración del Juego</h2>
+                    <p>Cantidad de jugadores</p><input type="text">
+                    <p>Cantidad de fichas por jugador</p><input type="text">
+                    <p>Quien parte</p>
+                </section>
+            </div>
+        </div>
+        <div class="centrado">
+            <p id="mano_jugador_texto">Mano del jugador</p>
+            <table id="mano_jugador">
+                <tr><td id="mano_1"></td><td id="mano_2"></td><td id="mano_3"></td><td id="mano_4"></td><td id="mano_5"></td><td id="mano_6"></td><td id="mano_7"></td></tr>
+            </table>
+            <button onclick="boton_aceptar();">Aceptar</button>
+            <button onclick="reiniciar();">Reiniciar</button>
         </div>
     </main>
-    <footer>
-
+    <footer >
+        
     </footer>
 </body>
 
